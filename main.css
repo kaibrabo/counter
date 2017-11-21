@@ -1,8 +1,11 @@
 body {
     text-align: center;
     color: white;
-    background-color: rgb(70,120,255);
+    background-color: rgb(20,90,255);
 }
 button {
     color: rgb(70,120,255);
+}
+li {
+    list-style-type: none;
 }
