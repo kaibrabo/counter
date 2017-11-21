@@ -2,21 +2,28 @@
 <html ng-app="counter">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Counter</title>
 
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="main.css" rel="stylesheet" type="text/css" />
     </head>
-    <body ng-controller="CounterController as counter" class="container">
+    <body ng-controller="CounterController as counter" class="container-fluid">
         <h2>
             Counting...
         </h2>
+        <hr />
         <p>
             Count: {{ counter.number }}
         </p>
 
-        <button id="increase" ng-click='counter.increase()'>Increase</button>
-        <button id="decrease" ng-click='counter.decrease()'>Decrease</button>
+        <button class="glyphicon glyphicon-plus" id="increase" ng-click='counter.increase()'></button>
+        <button class="glyphicon glyphicon-minus" id="decrease" ng-click='counter.decrease()'></button>
+        <hr />
 
+        <p>
+            built by Kai Brabo
+        </p>
 
 
 
