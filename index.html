@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="counter">
+    <head>
+        <meta charset="utf-8">
+        <title>Counter</title>
+
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body ng-controller="CounterController as counter" class="container">
+        <h2>
+            Counting...
+        </h2>
+        <p>
+            Count: {{ counter.number }}
+        </p>
+
+        <button id="increase" ng-click='counter.increase()'>Increase</button>
+        <button id="decrease" ng-click='counter.decrease()'>Decrease</button>
+
+
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
